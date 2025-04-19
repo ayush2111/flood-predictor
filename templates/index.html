@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flood Prediction</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body class="index-body">
+    <div class="container">
+      <h1>🌊 Flood Prediction Portal</h1>
+      <form method="POST" action="/predict">
+        <label>🌧️ Rainfall (mm):</label>
+        <input type="number" name="jun_sep" required />
+
+        <label>📈 Curve Number:</label>
+        <input type="number" name="curve_number" required />
+
+        <label>💧 Max Potential Retention (mm):</label>
+        <input type="number" name="retention" required />
+
+        <label>💦 Surface Runoff (mm):</label>
+        <input type="number" name="runoff" required />
+
+        <button type="submit">Predict Flood Risk</button>
+      </form>
+    </div>
+  </body>
+</html>

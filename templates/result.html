@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body class="{% if flood %}flood-body{% else %}no-flood-body{% endif %}">
+    <div class="container">
+      <h1>🧠 Prediction Result</h1>
+      <p><strong>Prediction:</strong> {{ prediction }}</p>
+      <p><strong>Flood Probability:</strong> {{ probability }}</p>
+
+      <h3>🌐 Input Summary:</h3>
+      <ul>
+        <li>Rainfall: {{ values['Jun-Sep'] }} mm</li>
+        <li>Curve Number: {{ values['Curve Number'] }}</li>
+        <li>
+          Potential Maximum Retention: {{ values['Potential Maximum Retention']
+          }} mm
+        </li>
+        <li>Surface Runoff: {{ values['Surface Runoff'] }} mm</li>
+      </ul>
+
+      <a href="/">🔁 Predict Again</a>
+    </div>
+  </body>
+</html>

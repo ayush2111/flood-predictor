@@ -1,0 +1,76 @@
+body.index-body {
+    font-family: Arial, sans-serif;
+    background: #e6f2ff;
+    margin: 0;
+    padding: 0;
+}
+body.flood-body {
+    background-image: url('/static/flood.png');
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body.no-flood-body {
+    background-image: url('/static/pexels-francesco-ungaro-281260.jpg');
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1, h3 {
+    text-align: center;
+    color: #004080;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #005bb5;
+}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #0073e6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
